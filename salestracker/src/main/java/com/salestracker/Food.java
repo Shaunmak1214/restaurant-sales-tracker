@@ -4,12 +4,12 @@ import java.util.UUID;
 
 public class Food extends Item {
   private final String food_type;
-  private final int food_price;
+  private final Double food_price;
   private final int food_discount;
   private final String food_id;
 
   // constructor
-  public Food(String food_name, String food_type, int food_price, int food_discount, String food_id) {
+  public Food(String food_name, String food_type, Double food_price, int food_discount, String food_id) {
     super(food_name, "food", food_price, food_discount, UUID.randomUUID(), food_id);
     this.food_type = food_type;
     this.food_price = food_price;
@@ -22,7 +22,7 @@ public class Food extends Item {
     return food_type;
   }
 
-  public int getFood_price() {
+  public Double getFood_price() {
     return food_price;
   }
 

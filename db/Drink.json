@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "drink_id": "1",
+    "drink_name": "Cabonara",
+    "drink_price": 12.00
+  },
+  {
+    "drink_id": "2",
+    "drink_name": "Agio Alio",
+    "drink_price": 14.00
+  }
+]

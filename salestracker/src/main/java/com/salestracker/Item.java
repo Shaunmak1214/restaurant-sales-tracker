@@ -2,15 +2,15 @@ package com.salestracker;
 
 import java.util.UUID;
 
-abstract class Item {
-  protected String item_name;
+public class Item {
+  private String item_name;
   protected String item_type;
-  protected int item_price;
+  protected Double item_price;
   protected int item_discount_amount;
   protected UUID item_discount_id;
   protected String item_id;
 
-  Item(String item_name, String item_type, int item_price, int item_discount_amount, UUID item_discount_id, String item_id) {
+  Item(String item_name, String item_type, Double item_price, int item_discount_amount, UUID item_discount_id, String item_id) {
     this.item_name = item_name;
     this.item_type = item_type;
     this.item_price = item_price;
@@ -27,7 +27,7 @@ abstract class Item {
     return item_type;
   }
 
-  public int getItem_price() {
+  public Double getItem_price() {
     return item_price;
   }
 
