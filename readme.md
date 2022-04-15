@@ -10,15 +10,15 @@
 
 
 ### Todos
-[x] Utils
-[x] Builder for User
-[x] Builder for Discount
-[x] Factory for Drinks
-[x] Factory for Food
-[x] Abstract class for Items (to hold: Drinks and Foods)
-[x] Builder for Sales
-[] Logic to read db and assign objects using builder (Foods, Drinks Item List) (Using Utils as Singleton)
-[] Logic for calculating discounts
-[] Full flow of ordering 
-[] Full flow of ordering with discounts
-[] UI/UX Design and Implementation
+1. [x] Singleton for Utils 
+2. [x] Builder for User
+3. [x] Builder for Discount
+4. [x] Factory for Drinks
+5. [x] Factory for Food
+6. [x] Abstract class for Items (to hold: Drinks and Foods)
+7. [x] Builder for Sales
+8. [] Logic to read db and assign objects using builder (Foods, Drinks Item List) (Using Utils as Singleton)
+9. [] Logic for calculating discounts
+10. [] Full flow of ordering 
+11. [] Full flow of ordering with discounts
+12. [] UI/UX Design and Implementation
