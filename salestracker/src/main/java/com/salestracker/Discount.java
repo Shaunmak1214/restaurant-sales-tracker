@@ -66,14 +66,14 @@ public class Discount {
     private final int disc_food_value;
     private final int disc_drink_value;
 
-    public DiscountBuilder(String disc_name, String disc_type, String disc_code, int disc_food_value, int disc_drink_value) {
-      this.disc_id = UUID.randomUUID();
+    public DiscountBuilder(UUID disc_id, String disc_name, String disc_type, String disc_code, int disc_food_value, int disc_drink_value) {
+      this.disc_id = disc_id;
       this.disc_name = disc_name;
       this.disc_type = disc_type;
       this.disc_code = disc_code;
       this.is_active = true;
-      this.disc_food_value = 0;
-      this.disc_drink_value = 0;
+      this.disc_food_value = disc_food_value;
+      this.disc_drink_value = disc_drink_value;
     }
 
     public Discount build() {

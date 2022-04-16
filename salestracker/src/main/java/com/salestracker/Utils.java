@@ -31,7 +31,8 @@ public class Utils {
   }
 
   public static void log(double message, Object... args){
-    System.out.println(message);
+    System.out.printf("%s.2f", message);
+    System.out.println();
   }
 
   public static void log(boolean message, Object... args){
@@ -74,11 +75,22 @@ public class Utils {
     }
   }
 
+  public static void dispArray (String intro, Object[] arr) {
+    log(intro);
+    for (Object obj : arr) {
+      log("%s", obj);
+    }
+  }
+
   private static String getFileNameByDbName(String dbName){
     if(dbName == "Food"){
       return "db/Food.json";
     }else if(dbName == "Drink"){
       return "db/Drink.json";
+    }else if(dbName == "Discount"){
+      return "db/Discount.json";
+    }else if(dbName == "Sales"){
+      return "db/Sales.json";
     }else {
       return "";
     }

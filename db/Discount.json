@@ -1,0 +1,19 @@
+[
+  {
+    "disc_id": "8778b563-5c84-4cda-8f2e-d46771284b57",
+    "disc_name": "Hari Raya Feast",
+    "disc_type": "Drink",
+    "is_active": true,
+    "disc_food_value": 0,
+    "disc_drink_value": 30,
+    "disc_code": "HRF"
+  },{
+    "disc_id": "b1f7b64c-3e67-4fcf-8d3a-1f263bbc73c7",
+    "disc_name": "Christmas Sale",
+    "disc_type": "Drink",
+    "is_active": true,
+    "disc_food_value": 0,
+    "disc_drink_value": 30,
+    "disc_code": "CSL"
+  } 
+]

@@ -17,8 +17,10 @@
 - [x] Factory for Food
 - [x] Abstract class for Items (to hold: Drinks and Foods)
 - [x] Builder for Sales
-- [] Logic to read db and assign objects using builder (Foods, Drinks Item List) (Using Utils as Singleton)
-- [] Logic for calculating discounts
-- [] Full flow of ordering 
-- [] Full flow of ordering with discounts
+- [x] Logic to read db and assign objects using builder (Foods, Drinks Item List) (Using Utils as Singleton)
+- [x] Logic to read discount and assign objects using builder
+- [x] Logic for calculating discounts
+- [x] Full flow of ordering 
+- [x] Full flow of ordering with discounts
+= [] Checkout -> Write an array ob objects for items
 - [] UI/UX Design and Implementation
