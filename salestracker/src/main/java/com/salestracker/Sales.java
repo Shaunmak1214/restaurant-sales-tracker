@@ -90,7 +90,12 @@ public class Sales {
       }
       // stringify the items into json array
       String sale_id_str  = sale.sale_id.toString(); 
-      String disc_applied= this.discount_applied.getDisc_id().toString();
+
+      String disc_applied= "";
+      // check if discount is used
+      if (sale.discount_applied != null) {
+        disc_applied= this.discount_applied.getDisc_id().toString();
+      }
       salesObj.put("sale_id",  sale_id_str);
       salesObj.put("sale_total_price", this.sale_total_price);
       salesObj.put("sale_net_price", this.sale_net_price);

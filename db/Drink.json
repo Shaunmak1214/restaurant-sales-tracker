@@ -1,47 +1,47 @@
 [
   {
     "drink_id": "1",
-    "drink_name": "Cabonara",
+    "drink_name": "Milo",
     "drink_price": 12.00
   },
   {
     "drink_id": "2",
-    "drink_name": "Agio Alio",
+    "drink_name": "Coca Cola",
     "drink_price": 14.00
   },
   {
     "drink_id": "3",
-    "drink_name": "Agio Alio W Cheese",
+    "drink_name": "Fanta",
     "drink_price": 14.00
   },
   {
     "drink_id": "4",
-    "drink_name": "Agio Alio No Cheese",
+    "drink_name": "Sprite",
     "drink_price": 14.00
   },
   {
     "drink_id": "5",
-    "drink_name": "Agio Alio W Macaroni",
+    "drink_name": "Coca Cola Light",
     "drink_price": 14.00
   },
   {
     "drink_id": "6",
-    "drink_name": "Agio Alio",
+    "drink_name": "Coca Cola Zero",
     "drink_price": 14.00
   },
   {
     "drink_id": "7",
-    "drink_name": "Agio Alio W Cheese",
+    "drink_name": "Coca Cola Diet",
     "drink_price": 14.00
   },
   {
     "drink_id": "8",
-    "drink_name": "Agio Alio No Cheese",
+    "drink_name": "Coca Cola Diet Light",
     "drink_price": 14.00
   },
   {
     "drink_id": "9",
-    "drink_name": "Agio Alio W Macaroni",
+    "drink_name": "Coca Cola Diet Zero",
     "drink_price": 14.00
   }
 ]

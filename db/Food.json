@@ -1,1 +1,47 @@
-[{"food_id":"mayo", "food_name": "Mayonise"}]
+[
+  {
+    "food_id": "1",
+    "food_name": "Cabonara",
+    "food_price": 12.00
+  },
+  {
+    "food_id": "2",
+    "food_name": "Agio Alio",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "3",
+    "food_name": "Agio Alio W Cheese",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "4",
+    "food_name": "Agio Alio No Cheese",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "5",
+    "food_name": "Agio Alio W Macaroni",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "6",
+    "food_name": "Agio Alio",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "7",
+    "food_name": "Agio Alio W Cheese",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "8",
+    "food_name": "Agio Alio No Cheese",
+    "food_price": 14.00
+  },
+  {
+    "food_id": "9",
+    "food_name": "Agio Alio W Macaroni",
+    "food_price": 14.00
+  }
+]

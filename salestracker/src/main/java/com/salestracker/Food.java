@@ -32,8 +32,12 @@ public class Food extends Item {
     return getItem_id();
   }
 
+  public String getItem_type () {
+    return "Food";
+  }
+
   @Override
   public String toString() {
-    return "Food: " + getFood_name() + "added";
+    return "Food: " + getFood_name();
   }
 }

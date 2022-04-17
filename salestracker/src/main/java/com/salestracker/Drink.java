@@ -33,6 +33,10 @@ public class Drink extends Item {
     return getItem_name();
   }
 
+  public String getItem_type () {
+    return "Drink";
+  }
+
   @Override
   public String toString() {
     return "Drink: " + getDrink_name();

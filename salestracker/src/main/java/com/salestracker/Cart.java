@@ -93,11 +93,13 @@ public class Cart {
     Double totalNet = 0.0;
     if (cart_discount_applied != null) {
       if(cart_discount_applied.getDisc_type().equals("Food")) {
-
         for (Item item : cart_items) {
           if (item.getItem_type().equalsIgnoreCase("Food")) {
             totalDiscount += item.getItem_price() * (1 - (cart_discount_applied.getDisc_food_value() / 100.0));
             totalNet += item.getItem_price();
+          }else {
+            totalNet += item.getItem_price();
+            totalDiscount += item.getItem_price();
           }
         }
       } else if (cart_discount_applied.getDisc_type().equals("Drink")) {
@@ -105,6 +107,9 @@ public class Cart {
           if (item.getItem_type().equalsIgnoreCase("Drink")) {
             totalDiscount += item.getItem_price() * (1- (cart_discount_applied.getDisc_drink_value() / 100.0));
             totalNet += item.getItem_price();
+          }else {
+            totalNet += item.getItem_price();
+            totalDiscount += item.getItem_price();
           }
         }
       } else if (cart_discount_applied.getDisc_type().equals("All")) {
