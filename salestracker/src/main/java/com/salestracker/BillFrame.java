@@ -46,7 +46,6 @@ public class BillFrame extends JFrame {
     this.cart = cart;
     setLayout(new BorderLayout());
 
-    String cart_id = cart.getCart_id();
     Item[] cart_items = cart.getCart_items();
     String cart_disc_code = cart.getCart_disc_code();
     Discount cart_discount_applied = cart.getCart_discount_applied();
@@ -64,31 +63,39 @@ public class BillFrame extends JFrame {
 
     total_price_label.setFont(new Font("Montserrat", Font.BOLD, 20));
     total_price_label.setForeground(textColor);
+    total_price_label.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
     
     total_price_value.setFont(new Font("Montserrat", Font.BOLD, 20));
     total_price_value.setForeground(textColor);
     total_price_value.setText(NumberFormat.getCurrencyInstance().format(cart_total_price));
+    total_price_value.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
 
     net_price_label.setFont(new Font("Montserrat", Font.BOLD, 20));
     net_price_label.setForeground(textColor);
+    net_price_label.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
     
     net_price_value.setFont(new Font("Montserrat", Font.BOLD, 20));
     net_price_value.setForeground(textColor);
     net_price_value.setText(NumberFormat.getCurrencyInstance().format(cart_net_price));
+    net_price_value.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
 
     discount_code_label.setFont(new Font("Montserrat", Font.BOLD, 20));
     discount_code_label.setForeground(textColor);
+    discount_code_label.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
     discount_code_value.setFont(new Font("Montserrat", Font.BOLD, 20));
     discount_code_value.setForeground(textColor);
     discount_code_value.setText(cart_disc_code);
+    discount_code_value.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
 
     discount_applied_label.setFont(new Font("Montserrat", Font.BOLD, 20));
     discount_applied_label.setForeground(textColor);
+    discount_applied_label.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
     discount_applied_value.setFont(new Font("Montserrat", Font.BOLD, 20));
     discount_applied_value.setForeground(textColor);
     discount_applied_value.setText(cart_discount_name);
+    discount_applied_value.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
 
     // Panel
     topbar.setLayout(new FlowLayout());
@@ -99,9 +106,9 @@ public class BillFrame extends JFrame {
     center.setLayout(new BorderLayout());
     center.setBackground(backgroundColor);
 
-    bottomBar.setLayout(new FlowLayout());
+    bottomBar.setLayout(new BoxLayout(bottomBar, BoxLayout.Y_AXIS));
     bottomBar.setBackground(primaryColor);
-    bottomBar.setPreferredSize(new Dimension(frameWidth, 100));
+    bottomBar.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
     bottomBar.add(total_price_label);
     bottomBar.add(total_price_value);
@@ -126,6 +133,7 @@ public class BillFrame extends JFrame {
 
     table.setPreferredScrollableViewportSize(new Dimension(centerLeftWidth, frameHeight));
     table.setFillsViewportHeight(true);
+    table.setFont(new Font("Inter", Font.PLAIN, 14));
     JScrollPane scrollpane = new JScrollPane(table);
 
     tablePanel.setLayout(new BorderLayout());

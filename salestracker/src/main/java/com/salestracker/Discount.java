@@ -11,7 +11,6 @@ public class Discount {
   private final int disc_drink_value;
   private final String disc_code;
 
-
   private Discount(DiscountBuilder builder) {
     this.disc_id = builder.disc_id;
     this.disc_name = builder.disc_name;

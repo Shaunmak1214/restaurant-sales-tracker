@@ -112,7 +112,7 @@ public class Cart {
             totalDiscount += item.getItem_price();
           }
         }
-      } else if (cart_discount_applied.getDisc_type().equals("All")) {
+      } else if (cart_discount_applied.getDisc_type().equals("Bundled")) {
         for (Item item : cart_items) {
           if (item.getItem_type().equalsIgnoreCase("Food")) {
             totalDiscount += item.getItem_price() * (1-(cart_discount_applied.getDisc_food_value() / 100.0));
