@@ -55,7 +55,7 @@ public class Utils {
 
   public static void welcome() {
     Utils.spaceLine(2);
-    Utils.log("Welcome to the sales tracker app %s", "John");
+    Utils.log("Welcome to the western wizards sales tracker app %s", "John");
     Utils.log("The time now is: %s", Utils.getDateTime());
     Utils.spaceLine(1);
   }

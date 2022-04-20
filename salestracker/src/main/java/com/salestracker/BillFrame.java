@@ -31,7 +31,7 @@ public class BillFrame extends JFrame {
   JPanel tablePanel = new JPanel();
   JPanel bottomBar = new JPanel();
 
-  JLabel window_label = new JLabel("Sales Tracker");
+  JLabel window_label = new JLabel("Billing - Western Wizards");
   JLabel total_price_label = new JLabel("Total Price: ");
   JLabel total_price_value = new JLabel("0.00");
   JLabel net_price_label = new JLabel("Net Price: ");
@@ -42,7 +42,7 @@ public class BillFrame extends JFrame {
   JLabel discount_applied_value = new JLabel("");
 
   public BillFrame(Cart cart) {
-    super("Sales Tracker");
+    super("Western Wizards Billing");
     this.cart = cart;
     setLayout(new BorderLayout());
 

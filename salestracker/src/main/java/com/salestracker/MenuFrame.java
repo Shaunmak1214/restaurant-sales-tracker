@@ -43,7 +43,7 @@ public class MenuFrame extends JFrame{
 
   JLabel[] allItemsLabel = new JLabel[totalDrinksAndFoodsLength];
   JLabel[] allItemsPriceLabel = new JLabel[totalDrinksAndFoodsLength];
-  JLabel window_label = new JLabel("Sales Tracker");
+  JLabel window_label = new JLabel("Western Wizards");
   JLabel discount_text = new JLabel("Enter discount code here: ");
   JLabel discount_label = new JLabel("Discount applied: ");
   JLabel discount_value_label = new JLabel("");
@@ -64,7 +64,7 @@ public class MenuFrame extends JFrame{
   List<JButton> cartItemsRmvBtn = new ArrayList<JButton>();
 
   public MenuFrame(Cart cart) {
-    super("Sales Tracker");
+    super("Western Wizards");
     this.cart = cart;
 
     // set border layout 
